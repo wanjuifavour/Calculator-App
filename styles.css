@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.disp-cnt {
+    margin: 30px 55px 0 55px;
+    height: 20%;
+}
+
+.calc-cnt {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+
+}
+
+.secondary-display {
+    height: 20px;
+    background-color: #fff;
+    padding: 5px 10px;
+    text-align: right;
+    font-family: monospace;
+    color: #666;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.primary-display {
+    height: 40px;
+    background-color: #fff;
+    padding: 5px 10px;
+    text-align: right;
+    font-family: monospace;
+    font-size: 24px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+}
+
+.number-btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 20rem;
+    width: 60vw;
+    margin: 50px;
+}
+
+.operator-cnt {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 40vw;
+    margin: 50px;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.operator-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 75%;
+}
+
+.equals {
+    display: flex;
+    width: 100%;
+    height: 25%;
+}
+
+.btn {
+    border: none;
+    border-radius: 50px;
+    margin: 5px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+}
+
+.btn-clear {
+    border: none;
+    border-radius: 50px;
+    margin: 5px;
+    background-color: rgb(255, 81, 0);
+    color: white;
+    font-size: 20px;
+}
+
+.btn-op {
+    border: none;
+    border-radius: 50px;
+    margin: 5px;
+    background-color: rgb(255, 166, 0);
+    color: white;
+    font-size: 20px;
+}
+
+.btn-eq {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    margin: 5px;
+    background-color: lightgrey;
+    color: black;
+    font-size: 24px;
+}
+
+.btn:hover, .btn-op:hover{
+    background: #bab7b7;
+}
+
+.btn-eq:hover{
+    background: rgb(61, 125, 46);
+}
+
+.btn-clear:hover{
+    background: red;
+}
